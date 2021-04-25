@@ -1,5 +1,9 @@
-import styled from 'styled-components';
+import Text from '@components/Text';
 
 export default function Home() {
-  return <h1>Hello World</h1>;
+  return (
+    <Text as="h1" color="blue">
+      Hello World
+    </Text>
+  );
 }
