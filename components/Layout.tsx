@@ -1,8 +1,9 @@
 /** @jsxImportSource theme-ui */
+import { Flex, Box } from 'theme-ui';
 import Header from '@components/Header';
 
 const Layout: React.FC = (props) => (
-  <div
+  <Flex
     sx={{
       display: 'flex',
       flexDirection: 'column',
@@ -10,14 +11,15 @@ const Layout: React.FC = (props) => (
     }}
   >
     <Header />
-    <main
+    <Box
+      as="main"
       sx={{
         marginTop: [2, 4],
         width: '100%',
         flex: '1 1 auto',
       }}
     >
-      <div
+      <Box
         sx={{
           maxWidth: '48em',
           mx: 'auto',
@@ -25,9 +27,9 @@ const Layout: React.FC = (props) => (
         }}
       >
         {props.children}
-      </div>
-    </main>
-  </div>
+      </Box>
+    </Box>
+  </Flex>
 );
 
 export default Layout;
