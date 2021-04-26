@@ -1,5 +1,4 @@
 /** @jsxImportSource theme-ui */
-import Footer from '@components/Footer';
 import Header from '@components/Header';
 
 const Layout: React.FC = (props) => (
@@ -13,21 +12,21 @@ const Layout: React.FC = (props) => (
     <Header />
     <main
       sx={{
+        marginTop: [2, 4],
         width: '100%',
         flex: '1 1 auto',
       }}
     >
       <div
         sx={{
-          maxWidth: 768,
+          maxWidth: '48em',
           mx: 'auto',
-          px: 3,
+          px: [1, 3],
         }}
       >
         {props.children}
       </div>
     </main>
-    <Footer />
   </div>
 );
 

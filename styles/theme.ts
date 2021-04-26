@@ -16,6 +16,12 @@ export const theme: Theme = {
   },
   colors,
   shadows,
+  text: {
+    block: {
+      fontFamily: 'inherit',
+      lineHeight: 'body',
+    },
+  },
   styles: {
     root: {
       fontFamily: 'body',
@@ -100,6 +106,9 @@ export const theme: Theme = {
     img: {
       maxWidth: '100%',
     },
+  },
+  radii: {
+    card: '0.5rem',
   },
   breakpoints: ['48em', '64em'],
   buttons: {
