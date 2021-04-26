@@ -1,6 +1,7 @@
 /** @jsxImportSource theme-ui */
 import { Flex, Box } from 'theme-ui';
 import Header from '@components/Header';
+import NavButtons from '@components/NavButtons';
 
 const Layout: React.FC = (props) => (
   <Flex
@@ -11,12 +12,13 @@ const Layout: React.FC = (props) => (
     }}
   >
     <Header />
-    <Box
+    <Flex
       as="main"
       sx={{
         marginTop: [2, 4],
         width: '100%',
         flex: '1 1 auto',
+        alignItems: ['center', 'flex-start'],
       }}
     >
       <Box
@@ -28,6 +30,15 @@ const Layout: React.FC = (props) => (
       >
         {props.children}
       </Box>
+    </Flex>
+    <Box
+      as="footer"
+      py={[2, 3]}
+      sx={{
+        display: ['block', 'none'],
+      }}
+    >
+      <NavButtons />
     </Box>
   </Flex>
 );

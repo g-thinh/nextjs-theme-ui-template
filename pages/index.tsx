@@ -20,6 +20,7 @@ export default function Home() {
             This is my quick grab template for any front-end app using{' '}
             <Link
               href="https://nextjs.org/"
+              target="_blank"
               sx={{
                 fontWeight: 'bold',
                 textDecoration: 'none',
@@ -33,6 +34,7 @@ export default function Home() {
             and{' '}
             <Link
               href="https://theme-ui.com/home"
+              target="_blank"
               sx={{
                 fontWeight: 'bold',
                 textDecoration: 'none',
